@@ -13,7 +13,7 @@ html { scroll-padding-top:64px; }
 .profile-school { margin-top:5px; color:var(--muted); }
 .profile-links { display:flex; flex-wrap:wrap; align-items:center; gap:18px; margin-top:23px; }
 .profile-contact { font-weight:650; text-decoration:underline; text-underline-offset:4px; }
-.profile-photo { min-height:280px; height:100%; max-height:430px; border-radius:22px; background:#214239 url('classroom.png') center/cover no-repeat; }
+.profile-photo { display:block; width:100%; height:auto; aspect-ratio:4/5; object-fit:cover; object-position:50% 36%; border-radius:22px; background:#214239; }
 .subject-intro { display:flex; flex-wrap:wrap; align-items:baseline; gap:8px 18px; margin:clamp(32px,6vw,66px) 0 16px; padding-top:22px; border-top:1px solid var(--border); }
 .subject-intro h2 { font-size:clamp(24px,3vw,34px); }
 .subject-intro p { color:var(--muted); font-size:14px; }
@@ -87,7 +87,7 @@ html { scroll-padding-top:64px; }
 }
 @media(max-width:600px) {
   .profile-hero { display:block; }
-  .profile-photo { min-height:0; height:auto; aspect-ratio:2/1; margin-top:24px; border-radius:15px; }
+  .profile-photo { max-width:420px; margin:24px auto 0; border-radius:15px; }
 }
 @media(max-width:360px) {
   .subject h2 { font-size:27px; }
