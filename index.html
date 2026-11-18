@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Сайт Шлихта Владислава Васильевича, учителя математики и физической культуры МБОУ «СОШ № 33» г. Абакана. Материалы для 5–11 классов.">
+<title>Шлихт Владислав Васильевич · Персональный сайт учителя</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="subjects.css">
+<link rel="stylesheet" href="vendor/katex/katex.min.css">
+<script src="vendor/katex/katex.min.js" defer></script>
+<script src="math-format.js" defer></script>
+<script src="sport.js" defer></script>
+<script src="lesson-notes.js" defer></script>
+<script src="class-guides.js" defer></script>
+<script src="practice.js" defer></script>
+<script src="projects.js" defer></script>
+<script src="library.js" defer></script>
+</head>
+<body>
+<header class="top"><div class="shell bar"><nav aria-label="Разделы сайта"><a href="#home">Главная</a><a href="#math">Математика</a><a href="#sport">Физкультура</a><a href="#about">Об учителе</a><a href="#contacts">Контакты</a></nav></div></header>
+<main id="home">
+<section class="shell intro">
+<div class="profile-hero">
+  <div class="profile-copy">
+    <p class="eyebrow"><i></i> ПЕРСОНАЛЬНЫЙ САЙТ УЧИТЕЛЯ</p>
+    <h1>Шлихт Владислав <span>Васильевич</span></h1>
+    <p class="profile-role">Учитель математики и физической культуры</p>
+    <p class="profile-school">МБОУ «СОШ № 33», г. Абакан</p>
+    <p class="profile-description">Для учеников 5–11 классов здесь собраны разборы задач, работы для самопроверки и задания по физкультуре. Для коллег — планы учебных разделов и ссылки на федеральные программы.</p>
+    <div class="profile-links"><a class="primary" href="#about">Об учителе <span aria-hidden="true">↘</span></a><a class="profile-contact" href="#contacts">Связаться</a></div>
+  </div>
+  <div class="profile-photo" aria-hidden="true"></div>
+</div>
+<div class="subject-intro"><h2>Учебные разделы</h2><p>Материалы для 5–11 классов</p></div>
+<div class="split">
+  <details class="subject-group" id="math"><summary class="subject math"><div class="subject-copy"><span class="eyebrow">УЧЕБНЫЙ РАЗДЕЛ</span><h2>Математика</h2><p>Числа, уравнения, графики и задачи.</p><strong><span class="when-closed">Открыть раздел ↘</span><span class="when-open">Свернуть раздел ↑</span></strong></div>
+  <svg viewBox="0 0 320 220" aria-hidden="true"><defs><pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse"><path d="M25 0H0V25" fill="none" stroke="currentColor" stroke-opacity=".24"/></pattern></defs><path fill="url(#grid)" d="M0 0H320V220H0z"/><path d="M10 175H310M150 210V10" fill="none" stroke="currentColor" stroke-opacity=".55"/><path d="M62 20Q150 330 238 20" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="150" cy="175" r="4" fill="currentColor"/><text x="248" y="53" fill="currentColor" font-size="21">y = x²</text></svg></summary>
+<section class="shelf math-shelf" aria-labelledby="math-title"><div class="shell">
+<p class="eyebrow"><i></i> УЧЕБНАЯ БИБЛИОТЕКА</p><h2 id="math-title">Математика</h2>
+<p class="sub">Выберите класс. Начните с урока по теме, изучите примеры и переходите к задачам с пошаговыми решениями.</p><div class="library-content"></div>
+</div></section>
+</details>
+  <details class="subject-group" id="sport"><summary class="subject sport"><div class="subject-copy"><span class="eyebrow">УЧЕБНЫЙ РАЗДЕЛ</span><h2>Физическая культура</h2><p>Разминка, спортивные игры и командная работа.</p><strong><span class="when-closed">Открыть раздел ↘</span><span class="when-open">Свернуть раздел ↑</span></strong></div>
+  <svg viewBox="0 0 320 220" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="15" y="12" width="290" height="192" rx="96"/><rect x="28" y="25" width="264" height="166" rx="83"/><rect x="41" y="38" width="238" height="140" rx="70"/><rect x="54" y="51" width="212" height="114" rx="57"/><rect x="67" y="64" width="186" height="88" rx="44"/><path d="M162 12v52m0 88v52" stroke-dasharray="4 4"/></g><circle cx="234" cy="180" r="5" fill="currentColor"/></svg></summary>
+<section class="shelf sport-shelf" aria-labelledby="sport-title"><div class="shell">
+<p class="eyebrow"><i></i> УЧЕБНАЯ БИБЛИОТЕКА</p><h2 id="sport-title">Физическая культура</h2>
+<p class="sub">Выберите класс. Изучите технику и тактику, затем откройте практическое занятие с критериями наблюдения. Упражнения выполняются по указанию учителя.</p><div class="library-content"></div>
+</div></section>
+</details>
+</div>
+</section>
+<template id="library-template"><div class="class-nav"><h3>Материалы по классам</h3><div class="filters class-filters" role="group" aria-label="Выбор класса"></div></div><div class="toolbar"><div class="filters type-filters" role="group" aria-label="Виды материалов"></div><label class="search"><span aria-hidden="true">⌕</span><input type="search" placeholder="Поиск по теме или классу" aria-label="Поиск по теме или классу"></label></div><p class="count" aria-live="polite"></p><div class="cards"></div></template>
+<noscript><p class="shell">Включите JavaScript, чтобы открывать учебные материалы.</p></noscript>
+<section id="about" class="shell about"><div><p class="eyebrow"><i></i> ОБ УЧИТЕЛЕ</p><h2>Педагогическое<br>портфолио</h2></div>
+<dl><dt>ФИО</dt><dd>Шлихт Владислав Васильевич</dd><dt>Место работы</dt><dd>Учитель математики и физической культуры в МБОУ «СОШ № 33» г. Абакана</dd><dt>Образование</dt><dd>Хакасский государственный университет им. Н. Ф. Катанова</dd><dt>Специальность</dt><dd>Педагогическое образование</dd><dt>Профиль</dt><dd>Математика</dd></dl></section>
+<section id="contacts" class="contacts"><div class="shell contact-inner"><div><p class="eyebrow"><i></i> СВЯЗЬ</p><h2>Контакты</h2></div><address><strong>Шлихт Владислав Васильевич</strong><p>МБОУ «СОШ № 33», г. Абакан</p><ul><li><a href="mailto:vlad2710shliht@gmail.com">vlad2710shliht@gmail.com</a></li><li><a href="https://vk.ru/idslashl11">Страница ВКонтакте</a></li></ul></address></div></section>
+</main>
+<footer><div class="shell bar"><span>Сайт учителя · МБОУ «СОШ № 33», Абакан</span><a href="#home">Наверх ↑</a></div></footer>
+<dialog id="reader" aria-labelledby="reader-title"><div class="reader-bar"><button type="button" id="print">Печать / PDF</button><button type="button" id="close" aria-label="Закрыть">Закрыть ×</button></div><article id="document"></article><div id="slide-nav" hidden><button type="button" id="prev">← Назад</button><span id="progress" aria-live="polite"></span><button type="button" id="next">Далее →</button></div></dialog>
+</body>
+</html>
